@@ -91,7 +91,7 @@ const Home: React.FC = () => {
               desc: "Planning that looks beyond today. From retirement readiness to estate strategies, I help you think across generations."
             }
           ].map((pillar, idx) => (
-            <div key={idx} className="bg-white p-10 rounded-2xl border border-forest-green/5 hover:border-forest-green/30 transition-all group hover:shadow-xl hover:shadow-forest-green/5">
+            <div key={idx} className="bg-white p-10 rounded-2xl border border-forest-green/5 hover:border-forest-green/30 transition-all group hover:shadow-xl hover:shadow-forest-green/5 flex flex-col items-center text-center">
               <div className="w-14 h-14 bg-forest-green/10 text-forest-green rounded-xl flex items-center justify-center mb-6 group-hover:bg-forest-green group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl inline-flex items-center justify-center leading-none">
                   {pillar.icon}

@@ -112,7 +112,7 @@ const About: React.FC = () => {
               { icon: 'shield', title: 'Unwavering Integrity', desc: 'Your interests always come first. My independence ensures my advice is never conflicted by corporate quotas.' },
               { icon: 'support_agent', title: 'Accessibility', desc: 'I am your partner, not just your advisor. When you have a question, you speak directly with me, not a call centre.' }
             ].map((item, idx) => (
-              <div key={idx} className="space-y-6">
+              <div key={idx} className="space-y-6 flex flex-col items-center text-center">
                 <div className="w-16 h-16 bg-forest-green rounded-2xl flex items-center justify-center">
                   <span className="material-symbols-outlined text-white text-3xl inline-flex items-center justify-center leading-none">
                     {item.icon}
