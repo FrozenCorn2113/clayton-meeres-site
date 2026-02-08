@@ -170,6 +170,15 @@ const About: React.FC = () => {
           </div>
           <div className="lg:col-span-5">
             <div className="bg-forest-green/5 rounded-2xl p-10 border border-forest-green/10">
+              <div className="overflow-hidden rounded-xl bg-white/70 shadow-sm border border-forest-green/10 mb-8">
+                <img
+                  src="/images/s-l1600.webp"
+                  alt="Cover of From Real Estate to Retirement"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <div className="flex items-center gap-3 mb-6">
                 <span className="material-symbols-outlined text-forest-green text-3xl">menu_book</span>
                 <h3 className="text-xl font-bold text-forest-green font-newsreader">The Book</h3>

@@ -104,33 +104,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Book Credibility Section */}
-      <section className="max-w-[1200px] mx-auto px-6 mb-24">
-        <div className="bg-forest-green/5 rounded-3xl p-8 md:p-16 border border-forest-green/10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="material-symbols-outlined text-forest-green text-3xl">menu_book</span>
-              <h2 className="text-2xl md:text-3xl font-bold text-forest-green">Sharing Knowledge Beyond the Office</h2>
-            </div>
-            <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              With one of the greatest wealth transfers in Canadian history underway, Clayton wrote <em>From Real Estate to Retirement: Rethink, Retire, Thrive</em> to help everyday Canadians think proactively about how their real estate can shape their retirement — and benefit their family for generations. The book walks through the three key stages every retiree faces: before retirement, during retirement, and estate planning.
-            </p>
-            <a
-              href="https://www.amazon.ca/dp/1069524824"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-forest-green font-bold hover:opacity-80 transition-opacity"
-            >
-              <span>Find it on Amazon.ca</span>
-              <span className="material-symbols-outlined text-sm">arrow_forward</span>
-            </a>
-            <p className="text-xs text-slate-400 font-sans mt-4">
-              This book is for general informational and educational purposes only. It does not constitute personalised financial advice. Individual circumstances vary — please consult a qualified professional.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="max-w-[1200px] mx-auto px-6 mb-12">
         <div className="relative rounded-3xl overflow-hidden min-h-[400px] flex items-center justify-center text-center p-8 shadow-2xl">
