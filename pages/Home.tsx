@@ -25,20 +25,6 @@ const Home: React.FC = () => {
               Read My Story
             </Link>
           </div>
-          <div className="pt-4 flex items-center justify-center lg:justify-start gap-6 opacity-40 grayscale brightness-50">
-            <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-sm">verified</span>
-              <span className="text-xs font-sans font-bold text-slate-900">CFP® PROFESSIONAL</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-sm">security</span>
-              <span className="text-xs font-sans font-bold text-slate-900">CIRO REGULATED</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-sm">menu_book</span>
-              <span className="text-xs font-sans font-bold text-slate-900">PUBLISHED AUTHOR</span>
-            </div>
-          </div>
         </div>
         <div className="order-1 lg:order-2 relative h-full flex items-center justify-center">
           <div className="relative w-full max-w-[500px]">
@@ -107,7 +93,9 @@ const Home: React.FC = () => {
           ].map((pillar, idx) => (
             <div key={idx} className="bg-white p-10 rounded-2xl border border-forest-green/5 hover:border-forest-green/30 transition-all group hover:shadow-xl hover:shadow-forest-green/5">
               <div className="w-14 h-14 bg-forest-green/10 text-forest-green rounded-xl flex items-center justify-center mb-6 group-hover:bg-forest-green group-hover:text-white transition-colors">
-                <span className="material-symbols-outlined text-3xl">{pillar.icon}</span>
+                <span className="material-symbols-outlined text-3xl inline-flex items-center justify-center leading-none">
+                  {pillar.icon}
+                </span>
               </div>
               <h3 className="text-xl font-bold mb-4 text-forest-green">{pillar.title}</h3>
               <p className="text-slate-600 leading-relaxed font-sans text-sm">{pillar.desc}</p>

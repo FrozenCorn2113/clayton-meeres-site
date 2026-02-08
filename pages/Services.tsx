@@ -105,7 +105,9 @@ const Services: React.FC = () => {
           ].map((service, idx) => (
             <div key={idx} className="bg-white p-10 rounded-2xl border border-forest-green/5 hover:border-forest-green/30 transition-all group hover:shadow-xl hover:shadow-forest-green/5">
               <div className="w-14 h-14 bg-forest-green/10 text-forest-green rounded-xl flex items-center justify-center mb-6 group-hover:bg-forest-green group-hover:text-white transition-colors">
-                <span className="material-symbols-outlined text-3xl">{service.icon}</span>
+                <span className="material-symbols-outlined text-3xl inline-flex items-center justify-center leading-none">
+                  {service.icon}
+                </span>
               </div>
               <h3 className="text-xl font-bold mb-4 text-forest-green">{service.title}</h3>
               <p className="text-slate-600 leading-relaxed font-sans text-sm">{service.desc}</p>
@@ -156,7 +158,9 @@ const Services: React.FC = () => {
             ].map((item, idx) => (
               <div key={idx} className="flex gap-4 items-start">
                 <div className="w-10 h-10 bg-forest-green/10 text-forest-green rounded-lg flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined">{item.icon}</span>
+                  <span className="material-symbols-outlined inline-flex items-center justify-center leading-none">
+                    {item.icon}
+                  </span>
                 </div>
                 <div>
                   <h3 className="font-bold text-forest-green mb-1">{item.title}</h3>

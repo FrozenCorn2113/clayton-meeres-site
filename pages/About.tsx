@@ -110,11 +110,13 @@ const About: React.FC = () => {
             {[
               { icon: 'visibility', title: 'Clear Communication', desc: 'No hidden fees, no confusing jargon. I explain every recommendation until you feel confident and comfortable.' },
               { icon: 'shield', title: 'Unwavering Integrity', desc: 'Your interests always come first. My independence ensures my advice is never conflicted by corporate quotas.' },
-              { icon: 'face_6', title: 'Accessibility', desc: 'I am your partner, not just your advisor. When you have a question, you speak directly with me, not a call centre.' }
+              { icon: 'support_agent', title: 'Accessibility', desc: 'I am your partner, not just your advisor. When you have a question, you speak directly with me, not a call centre.' }
             ].map((item, idx) => (
               <div key={idx} className="space-y-6">
                 <div className="w-16 h-16 bg-forest-green rounded-2xl flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white text-3xl">{item.icon}</span>
+                  <span className="material-symbols-outlined text-white text-3xl inline-flex items-center justify-center leading-none">
+                    {item.icon}
+                  </span>
                 </div>
                 <h4 className="text-2xl font-bold text-forest-green font-newsreader">{item.title}</h4>
                 <p className="text-lg text-charcoal/80 leading-relaxed font-light font-newsreader">{item.desc}</p>
