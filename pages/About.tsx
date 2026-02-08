@@ -56,76 +56,6 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Visual Perspective Section */}
-      <section className="py-20 md:py-32 max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-forest-green mb-4 font-newsreader">A Perspective Beyond the Ledger</h2>
-          <div className="h-0.5 w-16 bg-forest-green/30 mx-auto"></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-          {[
-            {
-              src: '/images/perspective-focus-960.jpg',
-              srcSet: '/images/perspective-focus-640.jpg 640w, /images/perspective-focus-960.jpg 960w, /images/perspective-focus-1280.jpg 1280w',
-              title: 'Focus',
-              desc: 'Finding clarity amidst the noise of the market. A quiet Canadian lake at sunrise, where peace meets purpose.'
-            },
-            {
-              src: '/images/perspective-expertise-960.jpg',
-              srcSet: '/images/perspective-expertise-640.jpg 640w, /images/perspective-expertise-960.jpg 960w, /images/perspective-expertise-1280.jpg 1280w',
-              title: 'Expertise',
-              desc: 'Drawing on years of hands-on experience to guide your decisions. Relationships built on trust and shared vision.'
-            },
-            {
-              src: '/images/perspective-legacy-960.jpg',
-              srcSet: '/images/perspective-legacy-640.jpg 640w, /images/perspective-legacy-960.jpg 960w, /images/perspective-legacy-1280.jpg 1280w',
-              title: 'Legacy',
-              desc: 'Building a foundation for the generations to come. Knowledge preserved and passed forward.'
-            }
-          ].map((card, i) => (
-            <div key={i} className="group flex flex-col">
-              <div className="overflow-hidden rounded-2xl mb-6 md:mb-8 aspect-16/10 md:aspect-4/5 w-full shrink-0">
-                <img
-                  src={card.src}
-                  srcSet={card.srcSet}
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                  loading="lazy"
-                  decoding="async"
-                  alt={card.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-forest-green mb-3 font-newsreader">{card.title}</h3>
-              <p className="text-lg text-charcoal/60 font-light italic leading-relaxed font-newsreader">{card.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Commitments Section */}
-      <section className="bg-forest-green/5 py-32 border-y border-forest-green/10">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-20 text-center text-forest-green font-newsreader">My Commitment to You</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
-            {[
-              { icon: 'visibility', title: 'Clear Communication', desc: 'No hidden fees, no confusing jargon. I explain every recommendation until you feel confident and comfortable.' },
-              { icon: 'shield', title: 'Unwavering Integrity', desc: 'Your interests always come first. My independence ensures my advice is never conflicted by corporate quotas.' },
-              { icon: 'support_agent', title: 'Accessibility', desc: 'I am your partner, not just your advisor. When you have a question, you speak directly with me, not a call centre.' }
-            ].map((item, idx) => (
-              <div key={idx} className="space-y-6 flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-forest-green rounded-2xl flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white text-3xl inline-flex items-center justify-center leading-none">
-                    {item.icon}
-                  </span>
-                </div>
-                <h4 className="text-2xl font-bold text-forest-green font-newsreader">{item.title}</h4>
-                <p className="text-lg text-charcoal/80 leading-relaxed font-light font-newsreader">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Author & Book Section */}
       <section className="py-32 max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
@@ -192,6 +122,30 @@ const About: React.FC = () => {
                 "The government makes a living off what we leave on the table."
               </blockquote>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commitments Section */}
+      <section className="bg-forest-green/5 py-32 border-y border-forest-green/10">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-20 text-center text-forest-green font-newsreader">My Commitment to You</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+            {[
+              { icon: 'visibility', title: 'Clear Communication', desc: 'No hidden fees, no confusing jargon. I explain every recommendation until you feel confident and comfortable.' },
+              { icon: 'shield', title: 'Unwavering Integrity', desc: 'Your interests always come first. My independence ensures my advice is never conflicted by corporate quotas.' },
+              { icon: 'support_agent', title: 'Accessibility', desc: 'I am your partner, not just your advisor. When you have a question, you speak directly with me, not a call centre.' }
+            ].map((item, idx) => (
+              <div key={idx} className="space-y-6 flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-forest-green rounded-2xl flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white text-3xl inline-flex items-center justify-center leading-none">
+                    {item.icon}
+                  </span>
+                </div>
+                <h4 className="text-2xl font-bold text-forest-green font-newsreader">{item.title}</h4>
+                <p className="text-lg text-charcoal/80 leading-relaxed font-light font-newsreader">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
