@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Connect to form submission service (e.g., Formspree, Netlify Forms, or custom API)
-    alert('Thank you for your message. Clayton will be in touch within one business day.');
+    alert('Thank you for your message. The Sparrow Financial team will be in touch within one business day.');
   };
 
   return (
@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
               Get in Touch
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed font-sans mb-10">
-              Have a question or want to learn more? Send me a message and I'll get back to you within one business day.
+              Have a question or want to learn more? Send us a message and we'll get back to you within one business day.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-bold text-forest-green mb-2 font-sans">Your Message</label>
+                  <label htmlFor="message" className="block text-sm font-bold text-forest-green mb-2 font-sans">Your Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
               <div className="flex gap-3 items-start">
                 <span className="material-symbols-outlined text-forest-green mt-0.5">lock</span>
                 <p className="text-sm text-slate-500 font-sans leading-relaxed">
-                  Your information is kept strictly confidential. I will never share your details with third parties or add you to a mailing list. This form is for introductory purposes only and does not establish an advisor-client relationship.
+                  Your information is kept strictly confidential. We will never share your details with third parties or add you to a mailing list. This form is for introductory purposes only and does not establish an advisor-client relationship.
                 </p>
               </div>
             </div>
@@ -129,7 +129,7 @@ const Contact: React.FC = () => {
           {/* Right: Contact Info + Booking */}
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-10 border border-forest-green/5 shadow-sm">
-              <h2 className="text-2xl font-bold text-forest-green mb-8">Other Ways to Reach Me</h2>
+              <h2 className="text-2xl font-bold text-forest-green mb-8">Other Ways to Reach Us</h2>
               <div className="space-y-6">
                 <div className="flex gap-4 items-start">
                   <div className="w-10 h-10 bg-forest-green/10 text-forest-green rounded-lg flex items-center justify-center shrink-0">
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-bold text-forest-green text-sm font-sans">Office</p>
-                    <p className="text-slate-600 font-sans">Victoria, British Columbia</p>
+                    <p className="text-slate-600 font-sans">Serving clients nationwide</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -146,7 +146,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-bold text-forest-green text-sm font-sans">Email</p>
-                    <p className="text-slate-600 font-sans">hello@claytonmeeres.ca</p>
+                    <p className="text-slate-600 font-sans">hello@sparrowfinancial.com</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -155,7 +155,6 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-bold text-forest-green text-sm font-sans">Phone</p>
-                    {/* TODO: Replace with real phone number */}
                     <p className="text-slate-600 font-sans">(604) 555-0123</p>
                   </div>
                 </div>
@@ -181,7 +180,7 @@ const Contact: React.FC = () => {
               <ul className="space-y-3 font-sans text-sm text-slate-600">
                 <li className="flex gap-3 items-start">
                   <span className="material-symbols-outlined text-forest-green text-sm mt-0.5">check_circle</span>
-                  <span>I typically respond within one business day</span>
+                  <span>We typically respond within one business day</span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="material-symbols-outlined text-forest-green text-sm mt-0.5">check_circle</span>
@@ -204,7 +203,7 @@ const Contact: React.FC = () => {
       {/* Disclaimer */}
       <div className="max-w-4xl mx-auto px-6 pb-12">
         <p className="text-xs text-slate-400 font-sans text-center leading-relaxed">
-          Submitting this form does not establish an advisor-client relationship. Clayton Meeres is registered with <span className="font-medium">[PLACEHOLDER — dealer name]</span>. Member of the Canadian Investor Protection Fund (CIPF). This website is for informational purposes only and does not constitute financial, investment, tax, or legal advice.
+          Submitting this form does not establish an advisor-client relationship. Sparrow Financial is registered with <span className="font-medium">[PLACEHOLDER — dealer name]</span>. This website is for informational purposes only and does not constitute financial, investment, tax, or legal advice.
         </p>
       </div>
     </div>

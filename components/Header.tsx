@@ -11,22 +11,22 @@ const Header: React.FC = () => {
     <>
       <Link to="/" className={`hover:text-forest-green transition-colors ${path === '/' ? 'text-forest-green font-bold' : 'text-forest-green/80'}`}>Home</Link>
       <Link to="/about" className={`hover:text-forest-green transition-colors ${path === '/about' ? 'text-forest-green font-bold' : 'text-forest-green/80'}`}>About</Link>
-      <Link to="/services" className={`hover:text-forest-green transition-colors ${path === '/services' ? 'text-forest-green font-bold' : 'text-forest-green/80'}`}>Services</Link>
       <Link to="/contact" className={`hover:text-forest-green transition-colors ${path === '/contact' ? 'text-forest-green font-bold' : 'text-forest-green/80'}`}>Contact</Link>
     </>
   );
 
   return (
-    <header className="sticky top-0 z-50 bg-background-light/90 backdrop-blur-md border-b border-forest-green/10">
+    <header className="bg-background-light/90 backdrop-blur-md border-b border-forest-green/10">
       <div className="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-forest-green flex items-center justify-center rounded-lg text-white shadow-sm">
-            <span className="material-symbols-outlined text-2xl">account_balance</span>
+          <div className="w-12 h-12 bg-white flex items-center justify-center rounded-lg shadow-sm border border-forest-green/10">
+            <img
+              src="/images/1000013218.png"
+              alt="Sparrow Financial logo"
+              className="w-10 h-10 object-cover"
+            />
           </div>
-          <div className="flex flex-col">
-            <span className="text-xl font-bold tracking-tight text-forest-green leading-none">Clayton Meeres</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] font-sans font-bold opacity-60 mt-1">Independent Financial Planning</span>
-          </div>
+          <span className="text-xl font-bold tracking-tight text-forest-green leading-none">Sparrow Financial</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-10 font-sans font-medium text-sm">

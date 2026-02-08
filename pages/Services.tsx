@@ -8,7 +8,7 @@ const Services: React.FC = () => {
       {/* Hero */}
       <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-32 text-center">
         <h1 className="text-5xl md:text-7xl font-black leading-[1.1] text-forest-green mb-6">
-          How I Can <span className="text-forest-green/80 italic font-normal">Help You</span>
+          How We Can <span className="text-forest-green/80 italic font-normal">Help You</span>
         </h1>
         <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-sans">
           Independent financial planning tailored to your life, your goals, and your timeline. No cookie-cutter solutions — just honest, personalised guidance.
@@ -28,19 +28,19 @@ const Services: React.FC = () => {
                 step: '01',
                 icon: 'chat',
                 title: 'Discovery Conversation',
-                desc: 'We start with a relaxed, no-obligation conversation. I want to understand your life, your goals, and what keeps you up at night — not just your account balance.'
+                desc: 'We start with a relaxed, no-obligation conversation. We want to understand your life, your goals, and what keeps you up at night — not just your account balance.'
               },
               {
                 step: '02',
                 icon: 'description',
                 title: 'Your Personal Plan',
-                desc: 'I build a clear, comprehensive financial plan tailored to your situation. Every recommendation is explained in plain language, so you always know the "why" behind each decision.'
+                desc: 'We build a clear, comprehensive financial plan tailored to your situation. Every recommendation is explained in plain language, so you always know the "why" behind each decision.'
               },
               {
                 step: '03',
                 icon: 'rocket_launch',
                 title: 'Implementation',
-                desc: "Once you're comfortable, we put your plan into action. I handle the details and coordinate with other professionals (accountants, lawyers) as needed."
+                desc: "Once you're comfortable, we put your plan into action. We handle the details and coordinate with other professionals (accountants, lawyers) as needed."
               },
               {
                 step: '04',
@@ -95,7 +95,7 @@ const Services: React.FC = () => {
             {
               icon: 'home',
               title: 'Real Estate & Retirement',
-              desc: "Practical guidance on how your real estate fits into your retirement picture — whether to hold, sell, downsize, or leverage your property. Clayton literally wrote the book on this topic."
+              desc: "Practical guidance on how your real estate fits into your retirement picture — whether to hold, sell, downsize, or leverage your property."
             },
             {
               icon: 'storefront',
@@ -139,11 +139,6 @@ const Services: React.FC = () => {
                 icon: 'shield',
                 title: 'CIPF Member',
                 desc: 'Your accounts are protected by the Canadian Investor Protection Fund within prescribed limits.'
-              },
-              {
-                icon: 'menu_book',
-                title: 'Published Author',
-                desc: 'Author of From Real Estate to Retirement, sharing practical financial knowledge with Canadians.'
               },
               {
                 icon: 'hub',
@@ -192,7 +187,7 @@ const Services: React.FC = () => {
       {/* Disclaimer */}
       <div className="max-w-4xl mx-auto px-6 pb-12">
         <p className="text-xs text-slate-400 font-sans text-center leading-relaxed">
-          The services described on this page are subject to suitability and regulatory requirements. Investment products and services are not guaranteed — their values change frequently, and past performance may not be repeated. This information is for general purposes only and does not constitute a solicitation or offer. Please consult with Clayton directly to discuss your specific situation.
+          The services described on this page are subject to suitability and regulatory requirements. Investment products and services are not guaranteed — their values change frequently, and past performance may not be repeated. This information is for general purposes only and does not constitute a solicitation or offer. Please consult with Sparrow Financial directly to discuss your specific situation.
         </p>
       </div>
     </div>

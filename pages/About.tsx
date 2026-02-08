@@ -10,23 +10,23 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           <div className="lg:col-span-7">
             <h1 className="text-6xl lg:text-8xl font-bold leading-[1.1] text-charcoal mb-12 font-newsreader">
-              About Clayton
+              About Sparrow Financial
             </h1>
             <p className="text-2xl lg:text-4xl text-charcoal/80 mb-12 leading-relaxed italic font-light font-newsreader">
-              "Financial advocacy isn't about numbers on a screen; it's about the security and freedom of the people behind them."
+              "Great advice is about people first — the goals, the values, and the life you want your money to support."
             </p>
             <div className="hidden lg:block border-t border-gray-100 pt-10">
               <p className="text-xl text-charcoal/60 font-light flex items-center gap-3 font-newsreader">
                 <span className="material-symbols-outlined text-forest-green">location_on</span>
-                Based in Victoria, BC — Independent financial planning for real people, not portfolios.
+                Independent wealth management for people who want clarity and confidence.
               </p>
             </div>
           </div>
           <div className="lg:col-span-5">
             <div className="relative group">
               <div className="absolute -inset-px border border-gray-200 rounded-2xl z-20 pointer-events-none"></div>
-              <img
-                alt="Clayton Meeres professional portrait"
+            <img
+              alt="Sparrow Financial team portrait"
                 className="rounded-2xl shadow-2xl w-full object-cover object-[50%_10%] aspect-4/5 relative z-10"
                 src="/images/clayton-portrait.png"
               />
@@ -38,48 +38,49 @@ const About: React.FC = () => {
       {/* Main Content Body */}
       <section className="py-24 bg-white/40 border-t border-gray-100">
         <div className="max-w-[850px] mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-forest-green tracking-tight font-newsreader">Why I Chose Independence</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-forest-green tracking-tight font-newsreader">Why We Chose Independence</h2>
           <div className="space-y-10 text-xl lg:text-2xl leading-relaxed text-charcoal/90 font-light font-newsreader">
             <p>
-              For years, I worked within the rigid structures of large financial institutions. While these firms offer scale, they often come with a hidden cost: the pressure to prioritise corporate targets over individual client needs. I realised that to truly advocate for my clients, I needed to step away from the boardroom and back into the living room.
+              For years, we watched how large institutions shaped advice around product quotas instead of people. We built Sparrow Financial to do the opposite: start with your life, then build a plan that protects it.
             </p>
             <p>
-              Moving toward independence was a choice to remove the middleman. It allowed me to offer advice that is purely objective, unburdened by proprietary products or quarterly sales quotas.
+              Independence removes the middleman. It means every recommendation is objective, transparent, and aligned with your goals — not a corporate agenda.
             </p>
             <blockquote className="border-l-4 border-forest-green pl-10 py-8 my-20 italic text-3xl text-charcoal font-medium bg-forest-green/5 rounded-r-2xl font-newsreader">
-              "My journey is rooted in the belief that financial advice should be as unique as the person receiving it."
+              "Financial advice should be as unique as the person receiving it."
             </blockquote>
             <p>
-              Independence means I answer only to you. It means we focus on long-term sustainability and personal values rather than market volatility and standard benchmarks.
+              Independence means we answer only to you. We focus on long-term sustainability and personal values rather than market noise and standard benchmarks.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Author & Book Section */}
+      {/* Book Section */}
       <section className="py-32 max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-7">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-10 text-forest-green font-newsreader">Author &amp; Thought Leader</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-10 text-forest-green font-newsreader">From Real Estate to Retirement</h2>
             <div className="space-y-8 text-lg lg:text-xl leading-relaxed text-charcoal/80 font-light font-newsreader">
               <p>
-                Clayton is the author of <em>From Real Estate to Retirement: Rethink, Retire, Thrive</em>, written to help Canadians navigate one of the most common — and most misunderstood — intersections in personal finance: how real estate fits into retirement planning.
+                Sparrow Financial founder Clayton Meeres wrote <em>From Real Estate to Retirement: Rethink, Retire, Thrive</em> to help Canadians
+                navigate the intersection of property, retirement income, and lifestyle decisions.
               </p>
               <p>
-                Drawing on his unique background growing up in the custom home building industry, building and selling his own business, and becoming a financial advisor, the book covers the three stages every retiree faces:
+                The book outlines three practical stages that most retirees face, with clear guidance and real-world examples.
               </p>
               <ul className="space-y-4 ml-6">
                 <li className="flex gap-4">
                   <span className="material-symbols-outlined text-forest-green mt-1 shrink-0">arrow_forward</span>
-                  <span><strong className="text-charcoal">Before retirement</strong> — unlocking hidden potential in your property and aligning it with your future lifestyle</span>
+                  <span><strong className="text-charcoal">Before retirement</strong> — align your property, income plan, and lifestyle priorities</span>
                 </li>
                 <li className="flex gap-4">
                   <span className="material-symbols-outlined text-forest-green mt-1 shrink-0">arrow_forward</span>
-                  <span><strong className="text-charcoal">During retirement</strong> — simplifying your holdings to reduce costs and create reliable cash flow</span>
+                  <span><strong className="text-charcoal">During retirement</strong> — simplify holdings and create reliable cash flow</span>
                 </li>
                 <li className="flex gap-4">
                   <span className="material-symbols-outlined text-forest-green mt-1 shrink-0">arrow_forward</span>
-                  <span><strong className="text-charcoal">Estate planning</strong> — ensuring your property transitions smoothly, tax-efficiently, and prevents family conflict</span>
+                  <span><strong className="text-charcoal">Estate planning</strong> — pass on assets with clarity and fewer surprises</span>
                 </li>
               </ul>
               <div className="pt-4">
@@ -94,7 +95,7 @@ const About: React.FC = () => {
                 </a>
               </div>
               <p className="text-sm text-charcoal/40 font-sans">
-                This book is for general informational and educational purposes only. It does not constitute personalised financial, tax, or investment advice. Readers should consult a qualified professional before making financial decisions.
+                This book is for general informational and educational purposes only. It does not constitute personalised financial, tax, or investment advice.
               </p>
             </div>
           </div>
@@ -116,10 +117,10 @@ const About: React.FC = () => {
               <p className="text-2xl font-bold text-charcoal mb-2 font-newsreader italic">From Real Estate to Retirement</p>
               <p className="text-lg text-charcoal/60 mb-6 font-newsreader">Rethink, Retire, Thrive</p>
               <p className="text-charcoal/70 leading-relaxed font-newsreader mb-6">
-                A practical guide for everyday Canadians who want to understand how their most valuable asset — their property — fits into their retirement plan.
+                A practical guide for everyday Canadians who want to understand how their property fits into retirement.
               </p>
               <blockquote className="border-l-4 border-forest-green pl-6 py-2 italic text-charcoal/80 font-newsreader">
-                "The government makes a living off what we leave on the table."
+                "Clarity is the foundation of confidence."
               </blockquote>
             </div>
           </div>
@@ -129,12 +130,12 @@ const About: React.FC = () => {
       {/* Commitments Section */}
       <section className="bg-forest-green/5 py-32 border-y border-forest-green/10">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-20 text-center text-forest-green font-newsreader">My Commitment to You</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-20 text-center text-forest-green font-newsreader">Our Commitment to You</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             {[
-              { icon: 'visibility', title: 'Clear Communication', desc: 'No hidden fees, no confusing jargon. I explain every recommendation until you feel confident and comfortable.' },
-              { icon: 'shield', title: 'Unwavering Integrity', desc: 'Your interests always come first. My independence ensures my advice is never conflicted by corporate quotas.' },
-              { icon: 'support_agent', title: 'Accessibility', desc: 'I am your partner, not just your advisor. When you have a question, you speak directly with me, not a call centre.' }
+              { icon: 'visibility', title: 'Clear Communication', desc: 'No hidden fees, no confusing jargon. We explain every recommendation until it feels clear.' },
+              { icon: 'shield', title: 'Unwavering Integrity', desc: 'Your interests always come first. Our advice is never conflicted by corporate quotas.' },
+              { icon: 'support_agent', title: 'Accessibility', desc: 'You have a direct relationship with your advisor, not a call centre.' }
             ].map((item, idx) => (
               <div key={idx} className="space-y-6 flex flex-col items-center text-center">
                 <div className="w-16 h-16 bg-forest-green rounded-2xl flex items-center justify-center">
@@ -161,8 +162,8 @@ const About: React.FC = () => {
             <button className="bg-forest-green text-white hover:bg-forest-green/90 px-12 py-5 rounded-full font-bold text-xl transition-all shadow-lg">
               Schedule an Introductory Call
             </button>
-            <Link to="/services" className="border border-forest-green text-forest-green hover:bg-forest-green hover:text-white px-12 py-5 rounded-full font-bold text-xl transition-all">
-              View My Services
+            <Link to="/contact" className="border border-forest-green text-forest-green hover:bg-forest-green hover:text-white px-12 py-5 rounded-full font-bold text-xl transition-all">
+              Start a Conversation
             </Link>
           </div>
           <p className="text-sm text-charcoal/40 font-sans mt-6">No obligation. No pressure. Just a conversation.</p>
