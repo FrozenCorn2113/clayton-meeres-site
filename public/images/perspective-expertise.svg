@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Expertise placeholder illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E3EFEA"/>
+      <stop offset="1" stop-color="#F5F1E8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F6B5A"/>
+      <stop offset="1" stop-color="#2F7B6A"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0B2A23" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1500" rx="64" fill="url(#bg)"/>
+
+  <!-- Floating panel -->
+  <g filter="url(#shadow)">
+    <rect x="140" y="220" width="920" height="1060" rx="56" fill="url(#panel)"/>
+  </g>
+
+  <!-- Abstract "collaboration" motif -->
+  <g opacity="0.95">
+    <!-- Two people (circles) + connecting arc -->
+    <circle cx="420" cy="520" r="86" fill="#FFFFFF" opacity="0.78"/>
+    <circle cx="780" cy="520" r="86" fill="#FFFFFF" opacity="0.78"/>
+    <path d="M420 520 C 520 430, 680 430, 780 520" fill="none" stroke="url(#accent)" stroke-width="18" stroke-linecap="round" opacity="0.9"/>
+    <path d="M420 520 C 520 610, 680 610, 780 520" fill="none" stroke="#1F6B5A" stroke-width="10" stroke-linecap="round" opacity="0.25"/>
+
+    <!-- Simple chart -->
+    <g transform="translate(310 690)">
+      <rect x="0" y="0" width="580" height="380" rx="36" fill="#FFFFFF" opacity="0.72"/>
+      <g fill="none" stroke="#0B2A23" stroke-opacity="0.18" stroke-width="6">
+        <path d="M60 300 H520"/>
+        <path d="M60 80 V300"/>
+      </g>
+      <path d="M90 270 C 180 210, 240 220, 300 170 C 360 118, 430 150, 500 90" fill="none" stroke="url(#accent)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#1F6B5A" opacity="0.75">
+        <circle cx="90" cy="270" r="10"/>
+        <circle cx="300" cy="170" r="10"/>
+        <circle cx="500" cy="90" r="10"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Soft decorative dots -->
+  <g opacity="0.22" fill="#1F6B5A">
+    <circle cx="220" cy="340" r="8"/>
+    <circle cx="980" cy="370" r="8"/>
+    <circle cx="920" cy="1160" r="8"/>
+    <circle cx="260" cy="1180" r="8"/>
+  </g>
+</svg>

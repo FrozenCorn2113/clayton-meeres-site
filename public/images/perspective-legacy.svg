@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Legacy placeholder illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1DEB5"/>
+      <stop offset="1" stop-color="#F7EBDD"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F6B5A" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#2F7B6A" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C48B3A" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#F2D4A0" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#6B4A1C" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1500" rx="64" fill="url(#bg)"/>
+
+  <!-- Foundation stones -->
+  <g filter="url(#shadow)">
+    <path d="M140 1120 C 260 1040, 420 1040, 540 1120 C 680 1215, 820 1230, 1060 1160 L 1060 1340 C 820 1400, 660 1390, 520 1300 C 390 1220, 260 1210, 140 1280 Z" fill="url(#stone)"/>
+    <path d="M180 1000 C 300 930, 430 930, 540 995 C 670 1070, 820 1085, 1020 1030 L 1020 1140 C 820 1195, 670 1185, 540 1115 C 420 1055, 300 1045, 180 1098 Z" fill="#1E5F51" opacity="0.55"/>
+  </g>
+
+  <!-- "Legacy" motif: a simple arch + seed -->
+  <path d="M260 780 C 320 620, 440 520, 600 520 C 760 520, 880 620, 940 780" fill="none" stroke="#1F6B5A" stroke-opacity="0.28" stroke-width="26" stroke-linecap="round"/>
+  <path d="M300 780 C 350 650, 455 570, 600 570 C 745 570, 850 650, 900 780" fill="none" stroke="#1F6B5A" stroke-opacity="0.48" stroke-width="18" stroke-linecap="round"/>
+  <g transform="translate(600 700)">
+    <path d="M0 0 C -38 -22, -62 -55, -58 -92 C -20 -92, 20 -70, 40 -38 C 45 -65, 70 -95, 105 -112 C 120 -70, 110 -35, 78 -6 C 50 18, 18 22, 0 0 Z" fill="url(#accent)" opacity="0.9"/>
+  </g>
+
+  <!-- Minimal document outline (no text) -->
+  <g filter="url(#shadow)">
+    <rect x="260" y="230" width="680" height="420" rx="44" fill="url(#paper)"/>
+    <g stroke="#0B2A23" stroke-opacity="0.14" stroke-width="10" stroke-linecap="round">
+      <path d="M330 330 H870"/>
+      <path d="M330 395 H760"/>
+      <path d="M330 460 H840"/>
+      <path d="M330 525 H700"/>
+    </g>
+  </g>
+
+  <!-- Soft decorative dots -->
+  <g opacity="0.22" fill="#1F6B5A">
+    <circle cx="240" cy="260" r="8"/>
+    <circle cx="980" cy="320" r="8"/>
+    <circle cx="300" cy="145" r="8"/>
+    <circle cx="960" cy="1220" r="8"/>
+  </g>
+</svg>
